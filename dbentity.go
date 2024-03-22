@@ -1,4 +1,4 @@
-package entity
+package entitys
 
 type ControllersData struct {
 	Id_contorller     int `db:"id_contorller"`

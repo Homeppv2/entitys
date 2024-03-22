@@ -1,4 +1,4 @@
-package entity
+package entitys
 
 type MainMessageJSON struct {
 	Type           int         `json:"type" `

@@ -1,4 +1,4 @@
-package entity
+package entitys
 
 type MessageFromFrontendJSON struct {
 	Id int `json:"id"`
