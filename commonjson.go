@@ -1,12 +1,14 @@
 package entitys
 
+import "time"
+
 type MainMessageJSON struct {
-	Type           int         `json:"type" `
-	Number         int         `json:"number"`
-	Status         int         `json:"status"`
-	Charge         int         `json:"charge"`
-	Temperature_MK int         `json:"temperature_MK"`
-	Data           DataTypeMsg `json:"data"`
+	Type           int       `json:"type" `
+	Number         int       `json:"number"`
+	Status         int       `json:"status"`
+	Charge         int       `json:"charge"`
+	Temperature_MK int       `json:"temperature_MK"`
+	Data           time.Time `json:"data"`
 }
 
 type MessageTypeOneJSON struct {
@@ -28,15 +30,6 @@ type MessangeTypeZiroJson struct {
 	One   MessageTypeOneJSON   `json:"one,omitempty"`
 	Two   MessageTypeTwoJSON   `json:"two,omitempty"`
 	Three MessageTypeThreeJSON `json:"three,omitempty"`
-}
-
-type DataTypeMsg struct {
-	Second int `json:"second"`
-	Minute int `json:"minute"`
-	Hour   int `json:"hour"`
-	Day    int `json:"day"`
-	Month  int `json:"month"`
-	Year   int `json:"year"`
 }
 
 type ControlerLeackDataMessange struct {
