@@ -13,23 +13,23 @@ type MainMessageJSON struct {
 
 type MessageTypeOneJSON struct {
 	MainMessageJSON
-	Controlerleack ControlerLeackDataMessange `json:"controlerleack"`
+	Controlerleack *ControlerLeackDataMessange `json:"controlerleack"`
 }
 
 type MessageTypeTwoJSON struct {
 	MainMessageJSON
-	Controlermodule ControlerModuleDataMessange `json:"controlermodule"`
+	Controlermodule *ControlerModuleDataMessange `json:"controlermodule"`
 }
 
 type MessageTypeThreeJSON struct {
 	MainMessageJSON
-	Controlerenviroment ControlerEnviromentDataMessange `json:"controlerenviroment"`
+	Controlerenviroment *ControlerEnviromentDataMessange `json:"controlerenviroment"`
 }
 
 type MessangeTypeZiroJson struct {
-	One   MessageTypeOneJSON   `json:"one,omitempty"`
-	Two   MessageTypeTwoJSON   `json:"two,omitempty"`
-	Three MessageTypeThreeJSON `json:"three,omitempty"`
+	One   *MessageTypeOneJSON   `json:"one,omitempty"`
+	Two   *MessageTypeTwoJSON   `json:"two,omitempty"`
+	Three *MessageTypeThreeJSON `json:"three,omitempty"`
 }
 
 type ControlerLeackDataMessange struct {
