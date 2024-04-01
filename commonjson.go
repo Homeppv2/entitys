@@ -30,6 +30,12 @@ type MessangeTypeZiroJson struct {
 	One   *MessageTypeOneJSON   `json:"one,omitempty"`
 	Two   *MessageTypeTwoJSON   `json:"two,omitempty"`
 	Three *MessageTypeThreeJSON `json:"three,omitempty"`
+	Error *Error                `json:"error,omitempty"`
+}
+
+type Error struct {
+	Type   string `json:"type"`
+	Detail string `json:"detail"`
 }
 
 type ControlerLeackDataMessange struct {
