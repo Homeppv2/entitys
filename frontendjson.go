@@ -21,3 +21,8 @@ type IdMessages struct {
 	To    int `json:"to"`
 	Count int `json:"count"`
 }
+
+type RequestAuth struct {
+	Email    string `json:"email"`
+	Password string `json:"password"`
+}
