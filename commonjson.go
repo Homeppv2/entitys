@@ -27,10 +27,11 @@ type MessageTypeThreeJSON struct {
 }
 
 type MessangeTypeZiroJson struct {
-	One   *MessageTypeOneJSON   `json:"one,omitempty"`
-	Two   *MessageTypeTwoJSON   `json:"two,omitempty"`
-	Three *MessageTypeThreeJSON `json:"three,omitempty"`
-	Error *Error                `json:"error,omitempty"`
+	One         *MessageTypeOneJSON   `json:"one,omitempty"`
+	Two         *MessageTypeTwoJSON   `json:"two,omitempty"`
+	Three       *MessageTypeThreeJSON `json:"three,omitempty"`
+	Error       *Error                `json:"error,omitempty"`
+	RequestAuth *RequestAuth          `json:"auth,omitempty"`
 }
 
 type Error struct {
