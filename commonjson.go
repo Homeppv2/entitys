@@ -27,9 +27,9 @@ type MessageTypeThreeJSON struct {
 }
 
 type MessangeTypeZiroJson struct {
-	One         *MessageTypeOneJSON   `json:"one,omitempty"`
-	Two         *MessageTypeTwoJSON   `json:"two,omitempty"`
-	Three       *MessageTypeThreeJSON `json:"three,omitempty"`
+	One         *MessageTypeOneJSON   `json:"ContollersLeackMessangesData,omitempty"`
+	Two         *MessageTypeTwoJSON   `json:"ContollersModuleMessangesData,omitempty"`
+	Three       *MessageTypeThreeJSON `json:"ContollersEnviromentMessangesData,omitempty"`
 	Error       *Error                `json:"error,omitempty"`
 	RequestAuth *RequestAuth          `json:"auth,omitempty"`
 }
