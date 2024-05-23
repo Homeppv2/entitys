@@ -1,5 +1,7 @@
 package entitys
 
+import "time"
+
 type ControllersData struct {
 	Id_contorller     int `db:"id_contorller"`
 	Type_controller   int `db:"type_controller"`
@@ -7,11 +9,12 @@ type ControllersData struct {
 }
 
 type MainMessangesData struct {
-	Id_messange               int `db:"id_messange"`
-	Id_contorller             int `db:"id_contorller"`
-	Status_controller         int `db:"status_controller"`
-	Charge_controller         int `db:"charge_controller"`
-	Temperature_MK_controller int `db:"temperature_MK_controller"`
+	Id_messange               int       `db:"id_messange"`
+	Id_contorller             int       `db:"id_contorller"`
+	Status_controller         int       `db:"status_controller"`
+	Charge_controller         int       `db:"charge_controller"`
+	Temperature_MK_controller int       `db:"temperature_MK_controller"`
+	Tm                        time.Time `db:"time"`
 }
 
 type ContollersLeackMessangesData struct {
