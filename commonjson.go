@@ -9,6 +9,8 @@ type MainMessageJSON struct {
 	Charge         int       `json:"charge"`
 	Temperature_MK int       `json:"temperature_MK"`
 	Data           time.Time `json:"data"`
+	User           string    `json:"user"`
+	Password       string    `json:"password"`
 }
 
 type MessageTypeOneJSON struct {
